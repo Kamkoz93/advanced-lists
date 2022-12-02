@@ -1,0 +1,6 @@
+<ng-container *ngIf="userDets$ | async as item">
+  {{ item.id }}
+  {{ item.email }}
+
+  <button routerLink="/{{ item.id + 1 }}">Next users details</button>
+</ng-container>
