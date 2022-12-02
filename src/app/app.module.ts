@@ -10,6 +10,8 @@ import {BeersService} from "./services/beers.service";
 import {BeersServiceModule} from "./services/beers.service-module";
 import {MatPaginator, MatPaginatorModule} from "@angular/material/paginator";
 import {ProductServiceModule} from "./services/product.service-module";
+import {PublicApiServiceModule} from "./services/public-api.service-module";
+import {UsersServiceModule} from "./services/users.service-module";
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import {ProductServiceModule} from "./services/product.service-module";
     UserDetailsServiceModule,
     BeersServiceModule,
     MatPaginatorModule,
-    ProductServiceModule
+    ProductServiceModule,
+    PublicApiServiceModule,
+    UsersServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]

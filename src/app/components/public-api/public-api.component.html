@@ -1,0 +1,12 @@
+<mat-card>
+<mat-card-title>Public APIs List</mat-card-title>
+<mat-card-content>
+<mat-list role="list">
+  <mat-list-item role="listitem" *ngFor="let item of apiList$ | async">
+    {{item.api}}
+    {{item.category}}
+    {{item.description}}
+    <button mat-raised-button color="Primary" (click)="deleteApi(item.api)">Remove</button>
+  </mat-list-item></mat-list>
+</mat-card-content>
+</mat-card>

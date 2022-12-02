@@ -1,0 +1,13 @@
+<mat-card>
+      <mat-card-title>Users List</mat-card-title>
+      <p>Skorzystałem z innego API, ponieważ dummy nie działa. z tego co pamiętam to dummy też wymagało mapowania.</p>
+  <mat-card-content>
+    <mat-list role="list">
+      <mat-list-item role="listitem" *ngFor="let item of refreshedList$ | async">
+        {{item.id}}
+        {{item.first_name}}
+        {{item.email}}
+        <button mat-raised-button color="primary" (click)="deleteUser(item.id)">Remove</button>
+      </mat-list-item></mat-list>
+  </mat-card-content>
+</mat-card>

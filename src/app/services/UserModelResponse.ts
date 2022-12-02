@@ -1,4 +1,4 @@
-export interface UserModel {
+export interface UserModelResponse {
   readonly id: string,
   readonly email: string,
   readonly first_name: string,
